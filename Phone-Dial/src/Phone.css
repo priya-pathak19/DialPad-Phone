@@ -1,4 +1,4 @@
-*,*::before,*::after{
+ *,*::before,*::after{
     box-sizing: border-box;
     font-family: sans-serif;
     font-weight: normal;
@@ -6,53 +6,61 @@
 }
 
 body{
-    background: linear-gradient(to right ,#334d50,#cbcaa5);
+    background-color: #42a5f5;
     margin: 0;
     padding: 0;
 }
 
 
-.calculator-grid{
+.phone-grid{
     display: grid;
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(5,100px);
 }
 
-.calculator-grid > button {
+.btn{
     cursor: pointer;
     font-size: 2rem;
-    background-color: #a4d3d8;
+    background-color: white;
     border: 1px solid white;
     outline: none;
+    text-align: center;
 }
 
-.calculator-grid > button:hover {
-    background-color: #e1f7fa;
-}
-
-.span-two{
-    grid-column: span 2;
+.btn:active{
+    background-color: #c4c4c4;
 }
 
 .output{
     grid-column: 1/-1;
-    background-color: #1d4044;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
     word-wrap: break-word;
     word-break: break-all;
+    padding: 0 50px;
 }
 
-.output .prev-operand{
-    color: #bef8ff;
-    font-size: 1.5rem;
+.output .c-operand{
+    color: #1976d2;
+    font-size: 2rem;
 }
-.output .current-operand{
-    color: #ffffff;
-    font-size: 2.5rem;
+.calc-area{
+   border: 1px solid red;
+}
+
+.whole-area{
+    border: 1px solid red;
+}
+
+.btn-label{
+    padding-bottom: 30px;
+    font-size: 0.8rem;
+    color: grey;
+    text-align: center;
 }

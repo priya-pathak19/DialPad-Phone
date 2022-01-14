@@ -1,8 +1,9 @@
-import Calculator from "./Calculator";
+
+import Phone from "./Phone";
 function App() {
   return (
     <div className="App">
-      <Calculator/>
+      <Phone/>
     </div>
   );
 }
